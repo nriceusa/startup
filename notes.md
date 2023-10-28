@@ -13,4 +13,7 @@ Though I was already familiar with git, I learned the following about GitHub:
 - Use this to access your server: `ssh -i ~/.ssh/webserver-production.pem ubuntu@44.215.202.5`
 - Use this to restart Caddy: `sudo service caddy restart`
 
+## Notes on Deployment
+- Simon deployment: `./deployFiles.sh -k ~/.ssh/webserver-production.pem -h simon.nathanrice.info -s simon`
+
 Link to [README](./README.md)
