@@ -15,5 +15,6 @@ Though I was already familiar with git, I learned the following about GitHub:
 
 ## Notes on Deployment
 - Simon deployment: `./deployFiles.sh -k ~/.ssh/webserver-production.pem -h simon.nathanrice.info -s simon`
+- Startup deployment: `./deployFiles.sh -k ~/.ssh/webserver-production.pem -h startup.nathanrice.info -s startup`
 
 Link to [README](./README.md)
