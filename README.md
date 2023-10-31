@@ -30,6 +30,19 @@ The following technologies will be used:
 - **Authentication** - Registers and logs in users over HTTPS, gives them access to the ability to mark off achievements
 - **WebSocket** - When a user marks off an achievement, it is updated in real time for all users
 
+## Deliverables
+
+### HTML Deliverable
+
+For this deliverable I created an underlying HTML structure for the website.
+
+- **HTML pages** - A login/registration page, a personal user profile page, a leaderboards page and a page that represents another user's page that is being visited.
+- **Links** - The login page links to the personal user profile page. The header contains links to the other pages. On the leaderboards page, the names of the top players link to the stand-in profile page.
+- **Text** - Example text is entered into the spaces where they will be located in the final app.
+- **Login** - Blank text boxes with corresponding "Login" and "Register" buttons
+- **Database** - The achievements and user profiles represent data pulled from the database.
+- WebSocket - The total value of the user's points and the checkboxes next to each achievement will update in realtime.
+
 ## Design
 
 ### Login Page
