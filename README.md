@@ -1,11 +1,9 @@
 # Offline Achievements
 
 ## Elevator Pitch
-
 If you're a gamer, you're probably familiar with Xbox Achievements or PlayStation Trophies: small supplementary challenges for players to take on as they enjoy playing a game. When one of these challenges is completed, the player receives an award that can be shown off to their friends. But what about when you're not playing games? What about fun supplementary challenges for real life? **Offline Achievements** enables friends to compete for bragging rights by completing real-world tasks as simple as "high-five a stranger" or as complex as "learn how to juggle." The point value for each challenge reflects its complexity.
 
 ## Key Features
-
 The user will be able to:
 - Sign up for an account and securely log in with a username and password
 - View completed challenges
@@ -14,7 +12,6 @@ The user will be able to:
 - View a leaderboard of who has the highest score
 
 ## Technology Use
-
 The following technologies will be used:
 
 - **HTML** - Provides the structure of the application. Four pages total: login/signup, user profile, leaderboard, search results
@@ -33,7 +30,6 @@ The following technologies will be used:
 ## Deliverables
 
 ### HTML Deliverable
-
 For this deliverable I created an underlying HTML structure for the website.
 
 - **HTML pages** - A login/registration page, a personal user profile page, a leaderboards page and a page that represents another user's page that is being visited.
@@ -44,16 +40,16 @@ For this deliverable I created an underlying HTML structure for the website.
 - **Database** - The achievements and user profiles represent data pulled from the database.
 - **WebSocket** - The total value of the user's points at the top of the page and the checkboxes next to each achievement will update in realtime.
 
+### CSS Deliverable
+
 ## Design
 
 ### Login Page
-
 ![Login Design](readMeImages/Design_Login.png)
 
 On this page a user may login or signup for an account.
 
 ### Personal User Profile Page
-
 ![Personal User Profile Design](readMeImages/Design_PersonalProfile.png)
 
 On this page a user sees a total of the points they've earned through completing achievements and a list of all available achievements. They can also mark achievements as completed.
