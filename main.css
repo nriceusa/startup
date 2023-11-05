@@ -1,0 +1,24 @@
+html {
+    font-family: sans-serif;
+    color: hsl(0 0% 20%);
+    background-color: white;
+}
+
+.card {
+    background-color: hsl(0 0% 60%);
+    padding: 20pt;
+    border-radius: 5pt;
+}
+
+.title {
+    color: hsl(159, 86%, 31%);
+}
+
+@keyframes fly-in {
+    0% {
+        transform: translateZ(-200%);
+    }
+    100% {
+        transform: translateZ(0%);
+    }
+}
