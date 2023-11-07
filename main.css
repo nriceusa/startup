@@ -4,21 +4,76 @@ html {
     background-color: white;
 }
 
-.card {
-    background-color: hsl(0 0% 60%);
-    padding: 20pt;
-    border-radius: 5pt;
+.title-card {
+    animation: fly-in 3s;
+    padding-top: 100pt;
+    padding-bottom: 100pt;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    text-align: center;
+    vertical-align: middle;
 }
 
-.title {
-    color: hsl(159, 86%, 31%);
+.main-title {
+    font-size: 40pt;
+    text-align: center;
+}
+
+.main-subtitle {
+    font-size: larger;
+}
+
+.login-card {
+    background-color: hsl(0 0% 90%);
+    border-radius: 25pt;
+    padding: 30pt;
+    margin: auto;
+    max-width: 300pt;
+    font-size: larger;
+    text-align: center;
+    line-height: 25pt;
+}
+
+.page-title {
+    font-size: 30pt;
+    text-align: center;
+}
+
+.achievement-card {
+    background-color: hsl(0 0% 90%);
+    border-radius: 25pt;
+    padding: 30pt;
+    margin: 30pt;
+    text-align: center;
+    line-height: 25pt;
+}
+
+.page-search-box {
+    text-align: center;
+}
+
+.player-card {
+    background-color: hsl(0 0% 90%);
+    border-radius: 25pt;
+    padding: 10pt;
+    margin: 30pt;
+    text-align: center;
+    line-height: 25pt;
 }
 
 @keyframes fly-in {
-    0% {
-        transform: translateZ(-200%);
+    from {
+        transform: scale(50%);
+        opacity: 0%;
     }
-    100% {
-        transform: translateZ(0%);
+
+    50% {
+        transform: scale(102%);
+        /* opacity: 100%; */
+    }
+
+    to {
+        transform: scale(100%);
+        opacity: 100%;
     }
 }
