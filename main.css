@@ -1,6 +1,5 @@
 html {
     font-family: sans-serif;
-    color: hsl(0 0% 20%);
     background-color: white;
 }
 
@@ -34,31 +33,73 @@ html {
     line-height: 25pt;
 }
 
+.page-header {
+    text-align: left;
+    max-width: 300pt;
+    margin: auto;
+}
+
 .page-title {
-    font-size: 30pt;
-    text-align: center;
+    font-size: 20pt;
+}
+
+.page-score {
+    font-weight: 700;
+    font-size: 65pt;
+}
+
+.page-subtitle {
+    font-size: 15pt;
+}
+
+.page-body {
+    text-align: left;
+    max-width: 350pt;
+    margin: auto;
+}
+
+.achievement-icon {
+    border-radius: 5pt;
+}
+
+.achievement-toggle {
+    font-size: 20pt;
+}
+
+.achievement-value {
+    text-align: right;
+    vertical-align: middle;
+    font-size: 25pt;
 }
 
 .achievement-card {
     background-color: hsl(0 0% 90%);
-    border-radius: 25pt;
-    padding: 30pt;
-    margin: 30pt;
-    text-align: center;
-    line-height: 25pt;
+    border-radius: 20pt;
+    padding: 20pt;
 }
 
-.page-search-box {
-    text-align: center;
+.leaderboard-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.player-card {
+.leaderboard-number {
+    padding: 15pt;
+    font-size: 25pt;
+}
+
+.leaderboard-card {
+    width: 250pt;
+    display: flex;
     background-color: hsl(0 0% 90%);
-    border-radius: 25pt;
-    padding: 10pt;
-    margin: 30pt;
-    text-align: center;
-    line-height: 25pt;
+    border-radius: 20pt;
+    padding: 20pt;
+}
+
+.leaderboard-count {
+    text-align: right;
+    width: 40pt;
 }
 
 @keyframes fly-in {
@@ -68,7 +109,7 @@ html {
     }
 
     50% {
-        transform: scale(102%);
+        transform: scale(101%);
         /* opacity: 100%; */
     }
 
