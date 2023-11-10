@@ -34,9 +34,11 @@ html {
 }
 
 .page-header {
-    text-align: left;
+    text-align: center;
     max-width: 300pt;
     margin: auto;
+    padding-top: 75pt;
+    padding-bottom: 25pt;
 }
 
 .page-title {
@@ -76,30 +78,6 @@ html {
     background-color: hsl(0 0% 90%);
     border-radius: 20pt;
     padding: 20pt;
-}
-
-.leaderboard-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.leaderboard-number {
-    padding: 15pt;
-    font-size: 25pt;
-}
-
-.leaderboard-card {
-    width: 250pt;
-    display: flex;
-    background-color: hsl(0 0% 90%);
-    border-radius: 20pt;
-    padding: 20pt;
-}
-
-.leaderboard-count {
-    text-align: right;
-    width: 40pt;
 }
 
 @keyframes fly-in {
