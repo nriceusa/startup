@@ -41,6 +41,13 @@ For this deliverable I created an underlying HTML structure for the website.
 - **WebSocket** - The total value of the user's points at the top of the page and the checkboxes next to each achievement will update in realtime.
 
 ### CSS Deliverable
+For this deliverable I styled the website's HTML using CSS and Bootstrap
+- **Header, footer, and main content body** - Fixed navbar at the top of every page after login, footer at the bottom of every page with basic navigation.
+- **Navigation elements** - Navigation elements are now buttons located on the header and footer.
+- **Responsive to window resizing** - U.I. elements scale when the website is resized, including the navigation elements relocating to a hamburger menu.
+- **Application elements** - Buttons are large and easy to select, with even spacing.
+- **Application text content** - Text and headers are differentiated with font weight and size
+- **Application images** - Achievements have icons that are scaled and beveled to fit well in their space.
 
 ## Design
 
