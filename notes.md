@@ -51,5 +51,20 @@ myPromise
   .then(handleFulfilledB, handleRejectedB)
   .then(handleFulfilledC, handleRejectedC);
 ```
+- Arrays:
+```
+const a = [1, 2, 3];
+
+console.log(a.map((i) => i + i));
+// OUTPUT: [2,4,6]
+console.log(a.reduce((v1, v2) => v1 + v2));
+// OUTPUT: 6
+console.log(a.sort((v1, v2) => v2 - v1));
+// OUTPUT: [3,2,1]
+
+a.push(4);
+console.log(a.length);
+// OUTPUT: 4
+```
 
 Link to [README](./README.md)
