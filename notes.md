@@ -76,5 +76,61 @@ Though I was already familiar with git, I learned the following about GitHub:
       alertDisplay('module loaded');
     </script>
     ```
+- Modify the DOM:
+  - Add an element to the DOM:
+    ```JavaScript
+    const newChild = document.createElement('div');
+    newChild.textContent = 'new course';
+    
+    const parentElement = document.querySelector('#courses');
+    parentElement.appendChild(newChild);
+    ```
+  - Remove an element from the DOM:
+    ```JavaScript
+    const el = document.querySelector('#courses div');
+    el.parentElement.removeChild(el);
+    ```
+  - Add an event listener:
+    ```JavaScript
+    const submitDataEl = document.querySelector('#submitData');
+    submitDataEl.addEventListener('click', function (event) {
+      console.log(event.type);
+    });
+    ```
+  - Access the text content of an element:
+    ```JavaScript
+    console.log(el.textContent);
+    ```
+- LocalStorage:
+  ```JavaScript
+  localStorage.setItem(name, value)
+  localStorage.getItem(name)
+  localStorage.removeItem(name)
+  localStorage.clear()
+  ```
+- JSON:
+  ```JavaScript
+  const jsonString = JSON.stringify(myObject);
+  const myNewObject = JSON.parse(jsonString);
+  ```
+- Promises versus Await:
+  - Promise:
+    ```JavaScript
+    coinToss()
+      .then((result) => console.log(`Toss result ${result}`))
+      .catch((err) => console.error(`Error: ${err}`))
+      .finally(() => console.log(`Toss completed`));
+    ```
+  - Await:
+    ```JavaScript
+    try {
+      const result = await coinToss();
+      console.log(`Toss result ${result}`);
+    } catch (err) {
+      console.error(`Error: ${err}`);
+    } finally {
+      console.log(`Toss completed`);
+    }
+    ```
 
 Link to [README](./README.md)
