@@ -39,32 +39,42 @@ Though I was already familiar with git, I learned the following about GitHub:
 
 ## Notes on JavaScript
 - Promises:
-```JavaScript
-const myPromise = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve("foo");
-  }, 300);
-});
+  ```JavaScript
+  const myPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("foo");
+    }, 300);
+  });
 
-myPromise
-  .then(handleFulfilledA, handleRejectedA)
-  .then(handleFulfilledB, handleRejectedB)
-  .then(handleFulfilledC, handleRejectedC);
-```
+  myPromise
+    .then(handleFulfilledA, handleRejectedA)
+    .then(handleFulfilledB, handleRejectedB)
+    .then(handleFulfilledC, handleRejectedC);
+  ```
 - Arrays:
-```
-const a = [1, 2, 3];
+  ```JavaScript
+  const a = [1, 2, 3];
 
-console.log(a.map((i) => i + i));
-// OUTPUT: [2,4,6]
-console.log(a.reduce((v1, v2) => v1 + v2));
-// OUTPUT: 6
-console.log(a.sort((v1, v2) => v2 - v1));
-// OUTPUT: [3,2,1]
+  console.log(a.map((i) => i + i));
+  // OUTPUT: [2,4,6]
+  console.log(a.reduce((v1, v2) => v1 + v2));
+  // OUTPUT: 6
+  console.log(a.sort((v1, v2) => v2 - v1));
+  // OUTPUT: [3,2,1]
 
-a.push(4);
-console.log(a.length);
-// OUTPUT: 4
-```
+  a.push(4);
+  console.log(a.length);
+  // OUTPUT: 4
+  ```
+- Modules:
+  - JavaScript modules = ES modules
+  - Node.js modules = CommonJS modules
+  - Using a module in HTML:
+    ```HTML
+    <script type="module">
+      import { alertDisplay } from './alert.js';
+      alertDisplay('module loaded');
+    </script>
+    ```
 
 Link to [README](./README.md)
