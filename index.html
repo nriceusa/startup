@@ -4,7 +4,13 @@
         <title>Offline Achievements</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="main.css" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <script src="login.js"></script>
     </head>
     <body class="centered">
         <header class="title-card">
@@ -16,7 +22,7 @@
         </header>
         
         <main class="">
-            <form class="login-card" method="get" action="my-profile.html">
+            <div class="login-card">
                 <div class="form-floating">
                     <input id="username" class="form-control" type="text" name="username" placeholder="Username"></input>
                     <label for="username">Username</label>
@@ -27,21 +33,10 @@
                     <label for="password">Password</label>
                 </div>
                 <br>
-                <button class="btn btn-primary btn-lg" type="submit">Login</button>
+                <button class="btn btn-primary btn-lg" onclick="login()">Login</button>
                 <span>or</span>
-                <button class="btn btn-secondary btn-lg" type="submit">Register</button>
-            </form>
-            
-            <!-- <canvas id="canvasDemo" width="300" height="200" style="border: 1px solid #000000"></canvas>
-            <script>
-                const ctx = document.getElementById('canvasDemo').getContext('2d');
-                ctx.beginPath();
-                ctx.arc(150, 100, 50, 0, 2 * Math.PI);
-                ctx.fillStyle = 'red';
-                ctx.strokeStyle = 'red';
-                ctx.fill();
-                ctx.stroke();
-            </script> -->
+                <button class="btn btn-secondary btn-lg" onclick="register()">Register</button>
+            </div>
         </main>
     </body>
 </html>
