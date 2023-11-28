@@ -17,16 +17,15 @@ function updateAchievements() {
         toggleElement = element.querySelector(".achievement-toggle");
         valueElement = element.querySelector(".achievement-value");
         
-        console.log(valueElement.value);
-        if (toggleElement.value === "on") {
+        if (toggleElement.checked) {
             totalAchievements++;
-            totalScore += valueElement.value;
+            totalScore += Number(valueElement.textContent);
         }
     }
 
     const scoreElement = document.querySelector("#score");
     const achievementCountElement = document.querySelector("#achievement-count");
-    scoreElement.textContent = totalScore;
+    scoreElement.textContent = String(totalScore) + " pts";
     achievementCountElement.textContent = "Achievements: " + totalAchievements;
 }
 
