@@ -29,7 +29,24 @@ function updateAchievements() {
     achievementCountElement.textContent = "Achievements: " + totalAchievements;
 }
 
+function loadAchievements() {
+    achievementStates = {  // Temp placeholder for future database values
+        "social-butterfly": false,
+        "master-chef": true,
+        "bookworm": false,
+        "circus-freak": true,
+    }
+
+    for (const achievement in achievementStates) {
+        console.log(achievement);
+        const achievementElement = document.querySelector("#" + achievement);
+        toggleElement = achievementElement.querySelector(".achievement-toggle");
+        toggleElement.checked = achievementStates[achievement];
+    }
+}
+
 function loadProfile() {
+    loadAchievements();
     updateUsername();
     updateAchievements();
 }
